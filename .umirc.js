@@ -7,11 +7,12 @@ export default {
       path: '/',
       component: '../layouts/index',
       routes: [
-        { exact: true, path: '/', component: '../pages/Join.page.jsx' },
+        { exact: true, path: '/', component: '../pages/index.js' },
         { exact: true, path: '/chat', component: "../pages/Chat.page.jsx"}
       ]
     },
   ],
+
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
@@ -20,7 +21,7 @@ export default {
       dynamicImport: false,
       title: 'chatApp',
       dll: false,
-      
+
       routes: {
         exclude: [
           /models\//,

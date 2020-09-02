@@ -1,6 +1,7 @@
-import styles from './index.css';
 import Parse from "parse";
-import TestLiveQuery from "./components/test.component"
+import Join from '@/pages/Join.page';
+import {Link} from "umi";
+import {Button} from "antd";
 
 export default function() {
   //initialize back4app
@@ -9,17 +10,8 @@ export default function() {
 
   //render
   return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            Getting Started
-          </a>
-        </li>
-      </ul>
-      <TestLiveQuery />
+    <div>
+      <Join />
     </div>
   );
 }
